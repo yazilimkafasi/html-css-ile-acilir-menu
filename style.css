@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    background-color: green;
+}
+
+.logo {
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.workitem {
+    display: none;
+}
+
+.devitem {
+    display: none;
+}
+
+.menuitem {
+    padding: 20px;
+}
+
+.menuitem:hover {
+    background-color: rgb(43, 82, 5);
+}
+
+.work {
+    position: relative;
+}
+
+.work:hover .workitem {
+    padding-top: 10px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 0;
+}
+
+.dev:hover .devitem {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 100%;
+    top: 0px;
+}
+
+.item:hover {
+    background-color: rgb(11, 78, 2);
+}
+
+.dev:hover {
+    position: relative;
+}
+
+.item {
+    background-color: green;
+    height: 30px;
+    padding: 12px;
+    width: 100px;
+    border-width: 1px 0px;
+    border-color: white;
+    border-style: dotted;
+    display: flex;
+}
+
+ion-icon {
+    color: white;
+}
